@@ -1,0 +1,23 @@
+consumo = int(input("Ingrese la cantidad de metros cubicos: "))
+if consumo <15:
+    tarifa = 5
+elif consumo >=15 and consumo <30:
+    habitantes = int(input("¿Cuantos habitantes hay?: "))
+    if habitantes >3:
+        tarifa = 4
+    if habitantes == 3:
+        tarifa = 4.5
+else:
+    tarifa = 5
+    
+if consumo >=30:
+    habitantes = int(input("¿Cuantos habitantes hay?: "))
+    if habitantes >=5:
+        tarifa = 3.5
+    if habitantes % 2 == 0:
+        tarifa = 4
+    else: 
+        tarifa = 4.2
+
+consumoTotal = consumo * tarifa
+print("La tarifa es:", consumoTotal)
