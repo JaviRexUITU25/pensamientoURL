@@ -1,0 +1,45 @@
+#EJERCICIO 1
+'''def es_par_o_impar(n):
+    if n % 2 == 0:
+        print("Es par")
+    else:
+        print("Es impar")
+es_par_o_impar(8)'''
+#EJERCICIO 2
+'''def suma_lista(n):
+    return sum(n)
+lista = [1,2,3,4]
+resultado = suma_lista(lista)
+print("La suma es", resultado)'''
+#EJERCICIO 3
+'''def cuenta_regresiva(n):
+    if n < 0:
+        print("Desplegar")
+    else:
+        print(n)
+        cuenta_regresiva(n -1)
+cuenta_regresiva(8)'''
+#EJERCICIO 4
+'''def ascendente(n):
+    if n > 4:
+        print("fin")
+    else:
+        print(n)
+        ascendente(n + 1)
+ascendente(1)'''
+#EJERCICIO 5
+'''def suma_hasta(n):
+    return sum(n)
+    if n > 1:
+        a += n
+lista = [1,2,3]
+resultado = suma_hasta(lista)
+print("La suma es", resultado)'''
+#EJERICIO 6
+def factorial(num, resultado =1):
+    if num > 1: 
+        factorial(num -1, resultado * num)
+    else:
+        print(resultado)
+factorial(5)
+#EJERCICIO 7
