@@ -1,0 +1,46 @@
+class Animal:
+    def __init__(self, nombre, edad, peso):
+        self.nombre = nombre
+        self.edad = edad
+        self.peso = peso
+
+class Perro(Animal):
+    def __init__(self, nombre, edad, peso, raza):
+        super().__init__(nombre, edad, peso)  # Llama al constructor de la clase base
+        self.raza = raza
+
+    def datos(self):
+        print(f"El peso del perro es {self.peso} kg, su raza es {self.raza}, y su edad es de {self.edad} años.")
+
+# Creando un objeto de la clase Perro
+perro1 = Perro("Rex", 5, 20, "Pastor Alemán")
+perro1.datos()
+
+        
+class gato(Animal):
+    def __init__(self, peso, color, edad):
+        super().__init__(peso, color)
+        self.edad = edad
+    def datos_cat(self):
+         print(f"El peso del gato es {self.peso} kg, su raza es {self.raza}, y su edad es de {self.edad} años.")
+gato1 = gato(12, "naranja", 2)
+gato1.datos_cat()
+        
+        
+class ave(animal):
+    def _init_(self, peso, color, edad):
+        super().__init__(peso, color)
+        self.edad = edad
+    def datos_ave(self):
+        print(f"El peso del perro es {self.peso} kg, su raza es {self.raza}, y su edad es de {self.edad} años.")
+gato1 = gato(12, "naranja", 2)
+gato1.datos_cat()
+        
+        
+class camaleon(animal):
+    def _init_(self, peso, edad, color):
+        self.peso = peso
+        self.edad = edad
+        self.color = color
+    def datos_cama(self):
+        print("Peso", self.peso, "edad", self.edad, "color", self.color)'''
